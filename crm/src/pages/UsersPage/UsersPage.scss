@@ -1,0 +1,7 @@
+.users {
+  display: flex;
+  background: var(--color-gray);
+  &__wrapper {
+    padding: 80px;
+  }
+}

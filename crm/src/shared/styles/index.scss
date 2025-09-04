@@ -1,0 +1,23 @@
+body {
+  font-family: var(--font-light);
+  color: var(--color-text-light);
+  font-size: var(--font-size-little);
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1450px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-bold);
+}
+img,
+svg {
+  user-select: none; /* запрет выделения */
+  -webkit-user-drag: none; /* запрет drag-n-drop в браузерах на WebKit */
+}

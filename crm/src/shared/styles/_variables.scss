@@ -1,0 +1,22 @@
+@use "./fonts" as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-bg: #ffffff;
+  --color-text: #292d32;
+  --color-text-light: #9197b3;
+  --color-gray: #fafbff;
+  --color-title: #000000;
+  --color-red: #df0404;
+  --color-red-light: #ffc5c5;
+  --color-green: #008767;
+  --color-green-light: rgba(0, 135, 103, 0.5);
+  --color-accent: rgba(89, 50, 234, 1);
+
+  --font-size-big: 32px;
+  --font-size-medium: 24px;
+  --font-size-little: 14px;
+
+  --font-light: "font__light", sans-serif;
+  --font-bold: "font__bold", sans-serif;
+}

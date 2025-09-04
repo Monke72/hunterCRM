@@ -1,0 +1,19 @@
+.choise {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  &__title {
+    color: var(--color-accent);
+    font-size: var(--font-size-big);
+    padding-bottom: 100px;
+  }
+}
+.cards {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+  }
+}

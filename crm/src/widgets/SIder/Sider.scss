@@ -1,0 +1,71 @@
+.sider {
+  min-width: 320px;
+  padding: 36px 24px 80px 24px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--color-light);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    padding: 10px 13px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    @include hover {
+      border: 1px solid var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+
+  &__item-icon {
+    img {
+      max-width: 26px;
+      border: 1px solid var(--color-text);
+      padding: 2px;
+      border-radius: 20%;
+    }
+  }
+
+  &__me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-image {
+      max-width: 30px;
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  &__logo {
+    max-width: 200px;
+    padding-bottom: 75px;
+  }
+  &__me-position {
+    font-size: 12px;
+  }
+}
+
+.sider__item.active {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  .sider__item-icon {
+    img {
+      border: 1px solid var(--color-light);
+    }
+  }
+}
