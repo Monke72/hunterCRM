@@ -1,15 +1,18 @@
-import "./RegChoise.scss";
+import "./ChoisePage.scss";
 import Card from "@shared/ui/card/Card";
 import devIcon from "@icons/developer-icon.svg";
 import managerIcon from "@icons/manager-icon.svg";
 import { useDispatch } from "react-redux";
 import { setRegSection } from "@features/registration/slice";
+import { useNavigate } from "react-router-dom";
 
-const RegChoise = () => {
+const ChoisePage = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  function choise(item: "manager" | "dev") {
+  function choise(item: "manager" | "dev" | "") {
     dispatch(setRegSection(item));
+    navigate(item);
   }
   return (
     <div className="choise">
@@ -33,4 +36,4 @@ const RegChoise = () => {
   );
 };
 
-export default RegChoise;
+export default ChoisePage;
